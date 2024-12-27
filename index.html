@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Перенаправление на оплату</title>
+    <title>Перенаправление на DonationAlerts</title>
     <script>
-        const totalAmount = new URLSearchParams(window.location.search).get('sum') || 0;
-        const redirectUrl = `https://www.donationalerts.com/widget/media?token=H6Xeg4XYLbodzgKY2Vco?amount=${totalAmount}`;
-        window.location.href = redirectUrl; // Перенаправление пользователя
+        // Перенаправляем пользователя на виджет
+        window.location.href = "https://www.donationalerts.com/widget/media?token=H6Xeg4XYLbodzgKY2Vco";
     </script>
 </head>
 <body>
-    <p>Вы будете перенаправлены на страницу оплаты...</p>
+    <p>Вы будете перенаправлены на виджет DonationAlerts...</p>
 </body>
 </html>
