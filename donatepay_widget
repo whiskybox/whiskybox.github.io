@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата</title>
+</head>
+<body>
+    <h1>Оплата через DonatePay</h1>
+    <iframe 
+        src="https://widget.donatepay.ru/widgets/page/f75d2604bfd43b3aedef51c10e470719dff6909e4ac860d65cb1dade0bcfda61?widget_id=6281160&sum=200" 
+        width="100%" 
+        height="600" 
+        frameborder="0">
+    </iframe>
+</body>
+</html>
