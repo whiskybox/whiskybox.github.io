@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оплата</title>
+    <title>Перенаправление на оплату</title>
+    <script>
+        const totalAmount = new URLSearchParams(window.location.search).get('sum') || 0;
+        const redirectUrl = `https://www.donationalerts.com/widget/media?token=H6Xeg4XYLbodzgKY2Vco?amount=${totalAmount}`;
+        window.location.href = redirectUrl; // Перенаправление пользователя
+    </script>
 </head>
 <body>
-    <h1>Оплата через DonatePay</h1>
-    <iframe 
-        src="https://www.donationalerts.com/widget/media?token=H6Xeg4XYLbodzgKY2Vco" 
-        width="100%" 
-        height="600" 
-        frameborder="0">
-    </iframe>
+    <p>Вы будете перенаправлены на страницу оплаты...</p>
 </body>
 </html>
